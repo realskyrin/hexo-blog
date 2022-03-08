@@ -1,0 +1,17 @@
+{
+    "": [
+        "rule_manual.md", 
+        "hello-skyrin.md", 
+        "_hello-world.md"
+    ], 
+    "__positions": {
+        "_hello-world.md": 3, 
+        "rule_manual.md": 1, 
+        "hello-skyrin.md": 2
+    }, 
+    "__raw_positions": {
+        "_hello-world.md": 3, 
+        "rule_manual.md": 1, 
+        "hello-skyrin.md": 2
+    }
+}

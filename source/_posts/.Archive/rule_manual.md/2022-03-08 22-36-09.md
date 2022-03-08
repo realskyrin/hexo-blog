@@ -1,0 +1,91 @@
+#### 简介
+您可以在**设置** → **规则列表**中添加或导入多条通知匹配规则。
+每条通知匹配规则有 3 个子项目用于设置通知过滤规则以及所需执行的操作，分别是 `通知来源`、`匹配规则` 以及 `执行`。
+
+#### 通知来源
+通知来源用于从应用层匹配推送到您设备上的通知，目前支持 `所有应用`、`包括应用`、`忽略应用` 3 种匹配模式。
+
+<strong class="md_compiled md_compiled_strong" id="通知来自">通知来自</strong>
+
+- **所有应用**  匹配所有应用向您发送的通知。
+- **包括应用**  仅匹配您选中的应用向您发送的通知。
+- **忽略应用**  仅忽略您选中的应用向您发送的通知。
+![](./_image/2022-03-08/2022-03-08-22-36-09.png)
+#### 匹配规则
+匹配规则根据您指定的匹配模式和文本列表从更精细的维度对通知进行匹配，目前可以通过 `通知标题`、`通知内容` 2 个维度进行匹配，每个维度支持 `所有内容`、`包括任一文本`、`包括全部文本`、`不包括任一文本`、`不包括全部文本`、`完全等于任一文本`、`匹配任一正则` 7 种匹配模式。
+<strong class="md_compiled md_compiled_strong" id="通知标题">通知标题</strong>  当 通知来源 匹配成功之后使用 通知标题 进行匹配
+<strong class="md_compiled md_compiled_strong" id="通知内容">通知内容</strong>  当 通知标题 匹配成功之后使用 通知内容 进行匹配
+⚠️ 通知来源、通知标题 和 通知内容 3 个匹配维度是并且的关系，即 3 项都通过匹配才算匹配成功。
+- **所有内容**  匹配所有通知内容或标题。
+- **包括任一文本**  当通知内容或标题包含文本列表中的任一文本时，匹配成功。
+    以下是一条简单的快递短信匹配规则，复制后可从**剪贴板导入**。
+    ```json
+    [{"actionList":[""],"actionMode":"Remind","enable":false,"id":54876,"matchAppMode":"AcceptPicked","matchNftMode":"ContainsAny","matchReplyMode":"FixedValue","matchValue":["【小蜜蜂】","【和驿】","【来取】","【社区人】","【速递易】","【如风达】","【快递超市】","【京东物流】","【菜鸟驿站】","【菜鸟裹裹】","【顺丰速运】","【百世快递】"],"name":"快递📦","needForward":false,"needMute":false,"needRemind":false,"needRemove":false,"needReply":false,"phoneNumber":"","pickedPKGs":["com.android.mms"],"replyValue":"","soundUri":"","timestamp":331}]
+    ```
+- **包括全部文本**  当通知内容或标题包含文本列表中的全部文本时，匹配成功。
+- **不包括任一文本**  当通知内容或标题**不**包含文本列表中的任一文本时，匹配成功。
+- **不包括全部文本**  当通知内容或标题**不**包含文本列表中的全部文本时，匹配成功。
+- **完全等于任一文本**  当通知内容或标题完全等于文本列表中的任一文本时，匹配成功。
+- **匹配任一正则**  当通知内容或标题匹配文本列表中任一正则表达式时，匹配成功。
+
+    如下是一条匹配 4～6 位数字验证码的规则
+    ```json
+    [{"actionList":[""],"actionMode":"Remind","enable":true,"id":26796,"matchAppMode":"AcceptPicked","matchNftMode":"Regex","matchReplyMode":"FixedValue","matchValue":["(?u003c![0-9])([0-9]{4})(?![0-9])","(?\u003c![0-9])([0-9]{5})(?![0-9])","(?\u003c![0-9])([0-9]{6})(?![0-9])"],"name":"验证码4~6位","needForward":false,"needMute":false,"needRemind":false,"needRemove":false,"needReply":false,"phoneNumber":"","pickedPKGs":["com.android.mms"],"replyValue":"","soundUri":"","timestamp":164}]
+    ```
+
+#### 执行
+当通知成功通过 `通知来源` 和 `匹配规则` 两层过滤最终成功匹配时，您还可以设置后续执行操作。目前支持 `消除通知`、`打开通知`、`播报通知`、`静音`、`提醒`、`振动`、`自动复制`、`短信回复`、`短信转发` 9 种操作。
+⚠️**静音**和**提醒**不能同时启用
+<strong class="md_compiled md_compiled_strong" id="消除通知">消除通知</strong>  从通知栏移除匹配到的通知，适用于垃圾短信、广告推送等。
+<strong class="md_compiled md_compiled_strong" id="打开通知">打开通知</strong>  立即打开通知，一些非常驻通知(如微信消息推送)打开后会被消除。
+<strong class="md_compiled md_compiled_strong" id="播报通知">播报通知</strong>  立即播报通知。
+-  **勿扰模式生效** 如果设备当前处于勿扰模式状态，临时关闭勿扰模式直到通知播报结束。
+-  **播报格式** 自定义播报内容格式，**{app}**、**{title}**、**{content} ** 分别为 **通知应用名**、**通知标题**、**通知内容** 的固定替换字符，缺省或不填写则不播报。
+<strong class="md_compiled md_compiled_strong" id="静音">静音</strong>  将设备设置为静音模式 5 秒钟，静音期间，您的来电、通知铃声都会被禁止。
+<strong class="md_compiled md_compiled_strong" id="提醒">提醒</strong>  播放您在常规设置中指定的声音文件，目前支持 `mp3`、`wav`、`flac` 等常见音频格式。
+- **强提醒**  播放您在常规设置中指定的声音文件且当设备被设置为勿扰模式时仍有效。
+- **铃声**  设置规则铃声，不设置则使用常规设置中的默认铃声。
+<strong class="md_compiled md_compiled_strong" id="振动">振动</strong>  当规则成功匹配通知 2 秒后，根据振动模式发出振动。
+- **强振动**  根据振动模式执行振动且当设备被设置为勿扰模式时仍有效。
+- **振动模式**  内置了 6 种振动模式，此外您还可以自定义 1 ～ 5 秒的振动模式。
+<strong class="md_compiled md_compiled_strong" id="自动复制">自动复制</strong> 自动复制消息内容到剪贴板。复制模式支持`通知内容`、`通知内容正则匹配`、`通知MG正则匹配` 3 种模式。
+- **通知内容** 复制全部通知内容到剪贴板。
+- **通知内容正则匹配**  根据您设置的正则表达式从通知内容中进行字符串匹配，并复制到剪贴板。
+- **通知MG正则匹配**  根据您设置的正则表达式从匹配到这条通知的 Match Group 中匹配字符串，并复制匹配成功的字符串，此选项需配合 `匹配规则` 下**匹配任一正则**模式使用，具体细节参考 短信回复 - 通知MG正则匹配。
+        如下👇是一条自动复制验证码的规则，部分机型如小米、华为等，需要授权剪切板读写，否则可能会复制失败。
+
+    ```json
+    [{"actionList":["自动复制"],"actionMode":"Remind","copyValue":"\\d+","enable":true,"forwardSuffix":"","id":26782,"matchAppMode":"AcceptPicked","matchCopyMode":"RegexNtfMatchGroup","matchNftMode":"Regex","matchReplyMode":"FixedValue","matchTitleMode":"All","matchTitleValue":[""],"matchValue":["(?\u003c\u003d([^\\d\\*a-z]|^))(\\d{6}|\\d{5}|\\d{4}|\\d{3} \\d{3})(?\u003d([^年元\\\\/\\da-z-?\\.:]|(\\.($|[^\\da-z]))|$))"],"name":"复制验证码","needCopy":true,"needForward":false,"needMute":false,"needOpen":false,"needRemind":false,"needRemindForce":true,"needRemove":false,"needReply":false,"needVibrate":false,"needVibrateForce":false,"phoneNumber":"7355608","pickedPKGs":["com.android.mms"],"replySuffix":"","replyValue":"","soundUri":"","star":true,"timestamp":42,"vibrateMode":0,"vibrateValue":"\u003d\u003d___\u003d\u003d_\u003d\u003d_\u003d\u003d"}]
+    ```
+
+<strong class="md_compiled md_compiled_strong" id="短信回复">短信回复</strong> 短信回复操作会尝试在成功匹配到通知时以短信形式回复消息给通知发送方。所以，如果通知来源不是系统短信的话可能会回复失败。短信回复目前支持 `固定值`、`通知内容正则匹配`、`通知MG正则匹配` 3 种模式。
+- **固定值**  回复您设置的固定文本给发送方。
+- **通知内容正则匹配**  根据您设置的正则表达式从通知内容中进行字符串匹配，并回复匹配成功的**第一组**字符串。示例如下:
+    收到10001发来
+    ```
+    您的证码为:123456，短信验证码5分钟内有效【中国电信】
+    ```
+    您设置的正则表达式为
+    ```
+    \d+
+    ```
+    匹配结果为 `123456`、`5`。
+    最终效果：尝试发送短信 `123456` 到 10001
+- **通知MG正则匹配**  这个模式理解起来会稍微有点复杂，但是非常有用。如果您不知道正则表达式的话可以先查询了解一下正则表达式以及正则表达式 Match Group 的定义。**通知MG正则匹配**模式会根据您设置的正则表达式从匹配到这条通知的 Match Group 中匹配字符串，并回复匹配成功的字符串，此选项需配合 `匹配规则` 下**匹配任一正则**模式使用，因为其它非正则匹配模式不会产生 Match Group。此模式的使用场景是按发送方要求的格式回复消息。示例如下:
+    假如您在 `匹配规则` 中设置的通知匹配正则为
+    ```
+    回复[A-Z]+退订 // ①
+    ```
+    这条👆正则成功匹配到10086发来的通知👇
+    ```
+    尊敬的客户，您好! 鉴于您良好的使用记录，...，回复TD退订本短信
+    ```
+    此时由正则 ① 匹配到的 Match Group 内容就是**回复TD退订**
+    在短信回复设置 Match Group 匹配正则为
+    ```
+    [A-Z]+ // ② 
+    ```
+    此时由正则 ② 从 Match Group（回复 TD 退订）中匹配到的结果就是**TD**
+    最终效果：尝试发送短信 `TD` 到 10086
+<strong class="md_compiled md_compiled_strong" id="短信转发">短信转发</strong> 尝试将匹配到的通知转发给指定号码。
+    ⚠️**在发送或转发验证码、取件码等操作之前，请仔细确认您设置的转发目的号码是可信任的，以免造成不必要的损失**⚠️
