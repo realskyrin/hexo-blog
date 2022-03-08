@@ -1,0 +1,57 @@
+name: Deploy to Caprover
+on:
+  push:
+    branches:
+    - main
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v3
+
+      # # Create a new deployment on GitHub
+      - uses: altinukshini/deployment-action@releases/v1
+        name: Create new deployment
+        id: deployment
+        with:
+          token: ${{ secrets.GITHUB_TOKEN}}
+          description: "Starting deployment to Caprover"
+          environment: Production
+
+      # Run the deploy command with caprover-cli and store output in a file
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Deploy with Caprover CLI
+        env:
+          INPUT_SERVER: ${{ secrets.CAPROVER_SERVER }}
+          INPUT_PASSWORD: ${{ secrets.CAPROVER_PASSWORD }}
+          INPUT_APPNAME: ${{ secrets.CAPROVER_APPNAME }}
+        run: npx caprover deploy -h $INPUT_SERVER -p $INPUT_PASSWORD -a $INPUT_APPNAME -b HEAD > caprover_output.txt
+
+      # - name: CapRover Deployment
+      #   uses: Focus3D/action-caprover-deploy@v1
+      #   with:
+      #     auth_used: "password"
+      #     url: ${{ secrets.CAPROVER_SERVER }}
+      #     password: ${{ secrets.CAPROVER_PASSWORD }}
+      #     app: ${{ secrets.CAPROVER_APPNAME }}
+      #     branch: HEAD
+
+
+      # Parse the deployment URL from the previously saved file
+      # - name: Get Deployment URL
+      #   id: caprover_deploy
+      #   run: echo "##[set-output name=output_url;]$(awk -F"App is available at " '/App is available at /{print $2}' caprover_output.txt)"
+        
+      # Update deployment status with the parsed deployment URL
+      # - name: Update deployment status
+      #   if: always()
+      #   uses: altinukshini/deployment-status@releases/v1
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     state: ${{ job.status }}
+      #     deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+      #     environment_url: "https://blog.skyrin.cn"
+      #     description: "Successfully deployed to Caprover"
