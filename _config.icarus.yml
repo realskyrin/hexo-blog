@@ -114,7 +114,7 @@ navbar:
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/realskyrin/hexo-blog
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
@@ -161,9 +161,21 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: disqus
-    # Disqus shortname
-    shortname: ''
+    type: gitalk
+    client_id: 86e2a83d196fb27a457a
+    client_secret: 1b9c4b2a2cc5d01f0c7590211ade91b4c0013958
+    repo: https://github.com/realskyrin/blog-comment
+    owner: realskyrin
+    admin:
+        - realskyrin
+    per_page: 20                    # 可选填
+    distraction_free_mode: false    # 可选填
+    pager_direction: last           # 可选填
+    create_issue_manually: false    # 可选填
+    proxy:                          # 可选填
+    flip_move_options:              # 可选填
+    enable_hotkey: true             # 可选填
+    language: zh-CN                 # 可选填
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -225,11 +237,11 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Your name
+        author: SkyRiN
         # Author title
-        author_title: Your title
+        author_title: Mobile Develoer
         # Author's current location
-        location: Your location
+        location: Xi'an, Shaanxi
         # URL or path to the avatar image
         avatar: 
         # Whether show the rounded avatar image
@@ -242,16 +254,16 @@ widgets:
         social_links:
             Github:
                 icon: fab fa-github
-                url: https://github.com/ppoffice
-            Facebook:
-                icon: fab fa-facebook
-                url: https://facebook.com
-            Twitter:
-                icon: fab fa-twitter
-                url: https://twitter.com
-            Dribbble:
-                icon: fab fa-dribbble
-                url: https://dribbble.com
+                url: https://github.com/realskyrin
+            # Facebook:
+            #     icon: fab fa-facebook
+            #     url: https://facebook.com
+            # Twitter:
+            #     icon: fab fa-twitter
+            #     url: https://twitter.com
+            # Dribbble:
+            #     icon: fab fa-dribbble
+            #     url: https://dribbble.com
             RSS:
                 icon: fas fa-rss
                 url: /
@@ -267,14 +279,14 @@ widgets:
         # Maximum level of headings to show (1-6)
         depth: 3
     # Recommendation links widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: links
-        # Names and URLs of the sites
-        links:
-            Hexo: https://hexo.io
-            Bulma: https://bulma.io
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: links
+    #     # Names and URLs of the sites
+    #     links:
+    #         Hexo: https://hexo.io
+    #         Bulma: https://bulma.io
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
