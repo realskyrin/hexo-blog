@@ -164,7 +164,7 @@ comment:
     type: gitalk
     client_id: 0587db6aa723e1ea1ab2
     client_secret: a24565b4226d89d701c9f4635b7afc8d7b2cec03
-    repo: github.com/realskyrin/blog-comment
+    repo: blog-comment
     owner: realskyrin
     admin:
         - realskyrin
