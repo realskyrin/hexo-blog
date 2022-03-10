@@ -162,9 +162,9 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
     type: gitalk
-    client_id: 86e2a83d196fb27a457a
-    client_secret: 1b9c4b2a2cc5d01f0c7590211ade91b4c0013958
-    repo: https://github.com/realskyrin/blog-comment
+    client_id: 0587db6aa723e1ea1ab2
+    client_secret: a24565b4226d89d701c9f4635b7afc8d7b2cec03
+    repo: github.com/realskyrin/blog-comment
     owner: realskyrin
     admin:
         - realskyrin
