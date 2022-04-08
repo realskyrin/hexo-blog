@@ -188,7 +188,7 @@ donates:
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: 'https://blog.skyrin.cn/image/zfb_code.jpeg'
+        qrcode: 'https://blog.skyrin.cn/image/qr_code/zfb_code.jpeg'
     # "Buy me a coffee" donate button configurations
     -
         type: buymeacoffee
@@ -210,7 +210,7 @@ donates:
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: 'https://blog.skyrin.cn/image/wx_code.jpeg'
+        qrcode: 'https://blog.skyrin.cn/image/qr_code/wx_code.jpeg'
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 # share:
