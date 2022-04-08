@@ -20,7 +20,7 @@ tags:
 
 成功匹配到通知列表的通知展示如下👇
 
-![](../image/2022-03-07/notification.png)
+![](../image/2022-03-07/notification.svg)
 
 ## 匹配规则
 匹配规则根据您指定的匹配模式和文本列表从更精细的维度对通知进行匹配，目前可以通过 `通知标题`、`通知内容` 2 个维度进行匹配，每个维度支持 `所有内容`、`包括任一文本`、`包括全部文本`、`不包括任一文本`、`不包括全部文本`、`完全等于任一文本`、`匹配任一正则` 7 种匹配模式。
@@ -32,7 +32,7 @@ tags:
 
 - **所有内容**  匹配所有通知内容或标题。</br>
 - **包括任一文本**  当通知内容或标题包含文本列表中的任一文本时，匹配成功。</br>
-    以下是一条简单的快递短信匹配规则，复制后可从**剪贴板导入**。
+    以下是一条简单的快递短信匹配规则，点击 <i class="fas fa-copy"></i> 复制后可从**剪贴板导入**。
     ```json
     [{"actionList":[""],"actionMode":"Remind","enable":false,"id":54876,"matchAppMode":"AcceptPicked","matchNftMode":"ContainsAny","matchReplyMode":"FixedValue","matchValue":["【小蜜蜂】","【和驿】","【来取】","【社区人】","【速递易】","【如风达】","【快递超市】","【京东物流】","【菜鸟驿站】","【菜鸟裹裹】","【顺丰速运】","【百世快递】"],"name":"快递📦","needForward":false,"needMute":false,"needRemind":false,"needRemove":false,"needReply":false,"phoneNumber":"","pickedPKGs":["com.android.mms"],"replyValue":"","soundUri":"","timestamp":331}]
     ```
@@ -42,7 +42,7 @@ tags:
 - **完全等于任一文本**  当通知内容或标题完全等于文本列表中的任一文本时，匹配成功。</br>
 - **匹配任一正则**  当通知内容或标题匹配文本列表中任一正则表达式时，匹配成功。</br>
 
-    如下是一条匹配 4～6 位数字验证码的规则
+    如下是一条匹配 4～6 位数字验证码的规则，点击 <i class="fas fa-copy"></i> 复制后可从**剪贴板导入**。
     ```json
     [{"actionList":[""],"actionMode":"Remind","enable":true,"id":26796,"matchAppMode":"AcceptPicked","matchNftMode":"Regex","matchReplyMode":"FixedValue","matchValue":["(?\u003d码.*(\\d{4,6}))|(\\d{4,6})(?\u003d.*码)"],"name":"匹配验证码","needForward":false,"needMute":false,"needRemind":false,"needRemove":false,"needReply":false,"phoneNumber":"","pickedPKGs":["com.android.mms"],"replyValue":"","soundUri":"","timestamp":164}]
     ```
