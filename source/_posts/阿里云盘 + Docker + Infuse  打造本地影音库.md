@@ -113,3 +113,62 @@ Infuse 内置的刮削器也很强，只要文件命名规范基本都可以识�
 
 播放 4K 视频时，看了下带宽占用，下行基本是在 10MB/s 左右，暂停播放时会缓存一段时间，100 兆带宽足够很流畅的串流播放了。
 
+### 资源分享
+
+|名称 | 链接 |              
+|:--|:--|            
+|影视大合集 4TB   |   [https://www.aliyundrive.com/s/42GyCgAYcCS](https://www.aliyundrive.com/s/42GyCgAYcCS)|
+
+| 剧集  |  链接 |              
+|:--|:--|
+| 黑镜   | [https://www.aliyundrive.com/s/ebhhzyw3GQc](https://www.aliyundrive.com/s/ebhhzyw3GQc) |
+|越狱|[https://www.aliyundrive.com/s/88Go9XcyNpG](https://www.aliyundrive.com/s/88Go9XcyNpG)|
+| 致命女人| [https://www.aliyundrive.com/s/snoG7FZaxDX](https://www.aliyundrive.com/s/snoG7FZaxDX) |
+| 肇事逃逸 | [https://www.aliyundrive.com/s/VCG7aXyLgA5](https://www.aliyundrive.com/s/VCG7aXyLgA5) |
+| 绝命毒师 | [https://www.aliyundrive.com/s/HpJd2mhahUv](https://www.aliyundrive.com/s/HpJd2mhahUv) |
+| 纸牌屋 | [https://www.aliyundrive.com/s/wcy3tYM5BDi](https://www.aliyundrive.com/s/wcy3tYM5BDi) |
+| 纸房子 | [https://www.aliyundrive.com/s/Fe5HTvyEBRk](https://www.aliyundrive.com/s/Fe5HTvyEBRk) |
+| 紧急呼救 | [https://www.aliyundrive.com/s/5kkSw4t1gEs](https://www.aliyundrive.com/s/5kkSw4t1gEs) |
+| 神盾局特工 | [https://www.aliyundrive.com/s/QEbw6h7z6VB](https://www.aliyundrive.com/s/QEbw6h7z6VB) |
+| 曼达洛人 | [https://www.aliyundrive.com/s/dUGCu8CfSWp](https://www.aliyundrive.com/s/dUGCu8CfSWp) |
+| 无耻之徒 | [https://www.aliyundrive.com/s/iF5pyr3z249](https://www.aliyundrive.com/s/iF5pyr3z249) |
+| 无罪之最 | [https://www.aliyundrive.com/s/R2Yrn2n6nwW](https://www.aliyundrive.com/s/R2Yrn2n6nwW) |
+| 太阳召唤 | [https://www.aliyundrive.com/s/1QqUH4wz75V](https://www.aliyundrive.com/s/1QqUH4wz75V) |
+| 为全人类 | [https://www.aliyundrive.com/s/223Ui3ShgUf](https://www.aliyundrive.com/s/223Ui3ShgUf) |
+| 超人和路易斯 | [https://www.aliyundrive.com/s/2bsFN4FEZNY](https://www.aliyundrive.com/s/2bsFN4FEZNY) |
+| 老友记| [https://www.aliyundrive.com/s/iDRzQC4feZ9](https://www.aliyundrive.com/s/iDRzQC4feZ9) |
+| 基地 | [https://www.aliyundrive.com/s/A5gJVCXd37z](https://www.aliyundrive.com/s/A5gJVCXd37z) |
+| 后翼弃兵 | [https://www.aliyundrive.com/s/KcViepfjkQS](https://www.aliyundrive.com/s/KcViepfjkQS) |
+| 僵尸校园 | [https://www.aliyundrive.com/s/MFurHQC36cb](https://www.aliyundrive.com/s/MFurHQC36cb) |
+| 东城梦魇 | [https://www.aliyundrive.com/s/qJ8tY2nB9pg](https://www.aliyundrive.com/s/qJ8tY2nB9pg) |
+| 黄石 | [https://www.aliyundrive.com/s/KUDbh4oXnrr](https://www.aliyundrive.com/s/KUDbh4oXnrr) |
+| 硅谷 | [https://www.aliyundrive.com/s/t7UyjneXHpp](https://www.aliyundrive.com/s/t7UyjneXHpp) |
+
+| 动漫  |  链接 |              
+|:--|:--|
+| 鬼灭之刃 | [https://www.aliyundrive.com/s/wAyLYaugvih](https://www.aliyundrive.com/s/wAyLYaugvih) |
+| 鬼灭之刃 那田蜘蛛山篇 | [https://www.aliyundrive.com/s/5mkcGXbFzR3](https://www.aliyundrive.com/s/5mkcGXbFzR3) |
+| 鬼灭之刃 游郭篇 | [https://www.aliyundrive.com/s/g3w3jfmvrMP](https://www.aliyundrive.com/s/g3w3jfmvrMP) |
+| 鬼灭之刃 无限列车篇 | [https://www.aliyundrive.com/s/Dgu9jRmPGcw](https://www.aliyundrive.com/s/Dgu9jRmPGcw) |
+| 鬼灭之刃 柱众会议・蝶屋敷篇 | [https://www.aliyundrive.com/s/i9WrsbhgTja](https://www.aliyundrive.com/s/i9WrsbhgTja) |
+| 鬼灭之刃 剧场版 无限列车篇 | [https://www.aliyundrive.com/s/n4UExXfVfpZ](https://www.aliyundrive.com/s/n4UExXfVfpZ) |
+| 鬼灭之刃 兄妹的羁绊 | [https://www.aliyundrive.com/s/znh2GuBmnax](https://www.aliyundrive.com/s/znh2GuBmnax) |
+| 鬼灭之刃 初高一体!! 鬼灭学园物语 情人节篇 | [https://www.aliyundrive.com/s/tgHZ2bgPWkQ](https://www.aliyundrive.com/s/tgHZ2bgPWkQ) |
+
+| 科幻/奇幻 |  链接 |              
+|:--|:--|
+| 钢铁侠1 | [https://www.aliyundrive.com/s/e7nmJt1rTPF](https://www.aliyundrive.com/s/e7nmJt1rTPF) |
+| 钢铁侠2 | [https://www.aliyundrive.com/s/WTAv2RVSF6s](https://www.aliyundrive.com/s/WTAv2RVSF6s) |
+| 钢铁侠3 | [https://www.aliyundrive.com/s/V4d3SgACuTB](https://www.aliyundrive.com/s/V4d3SgACuTB) |
+| 雷神 | [https://www.aliyundrive.com/s/ghWQ6RSLNSc](https://www.aliyundrive.com/s/ghWQ6RSLNSc) |
+| 雷神2：黑暗世界 | [https://www.aliyundrive.com/s/KfSf44TUDxj](https://www.aliyundrive.com/s/KfSf44TUDxj) |
+| 雷神3：诸神黄昏 | [https://www.aliyundrive.com/s/C84TgrSfdRq](https://www.aliyundrive.com/s/C84TgrSfdRq) |
+| 银河护卫队 | [https://www.aliyundrive.com/s/J54C2bsVSFA](https://www.aliyundrive.com/s/J54C2bsVSFA) |
+| 银河护卫队2 | [https://www.aliyundrive.com/s/b4HJEq1gb6N](https://www.aliyundrive.com/s/b4HJEq1gb6N) |
+| 加勒比海盗1：黑珍珠号的诅咒 | [https://www.aliyundrive.com/s/Dv6W74xYvap](https://www.aliyundrive.com/s/Dv6W74xYvap) |
+| 加勒比海盗2：聚魂棺 | [https://www.aliyundrive.com/s/sTU8Fc7kvyd](https://www.aliyundrive.com/s/sTU8Fc7kvyd) |
+| 加勒比海盗3：世界的尽头 | [https://www.aliyundrive.com/s/JktaWaRtpw7](https://www.aliyundrive.com/s/JktaWaRtpw7) |
+| 加勒比海盗4：惊涛怪浪 | [https://www.aliyundrive.com/s/SPLZdqkDogP](https://www.aliyundrive.com/s/SPLZdqkDogP) |
+| 加勒比海盗5：死无对证 | [https://www.aliyundrive.com/s/UujeKouD6F5](https://www.aliyundrive.com/s/UujeKouD6F5) |
+
+**更多资源加入 QQ 频道获取**: [影视资源库](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=Z6Gv5&appChannel=share&businessType=9&from=181074&biz=ka&shareSource=5)
