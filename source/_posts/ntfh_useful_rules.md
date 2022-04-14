@@ -1,0 +1,36 @@
+---
+title: 推荐规则
+date: 2022-04-14 20:37
+---
+
+点击 <i class="fas fa-copy"></i> 复制后可从**剪贴板导入**。
+<!--more-->
+**快递短信📦**
+```json
+[{"actionList":[""],"actionMode":"Remind","enable":false,"id":54876,"matchAppMode":"AcceptPicked","matchNftMode":"ContainsAny","matchReplyMode":"FixedValue","matchValue":["【小蜜蜂】","【和驿】","【来取】","【社区人】","【速递易】","【如风达】","【快递超市】","【京东物流】","【菜鸟驿站】","【菜鸟裹裹】","【顺丰速运】","【百世快递】"],"name":"快递📦","needForward":false,"needMute":false,"needRemind":false,"needRemove":false,"needReply":false,"phoneNumber":"","pickedPKGs":["com.android.mms"],"replyValue":"","soundUri":"","timestamp":331}]
+```
+
+**复制短信验证码**
+```json
+{"actionList":["9"],"actionMode":"Remind","copyValue":"\\d+","emailTo":"","enable":true,"forwardSuffix":"","id":804,"matchAppMode":"AcceptPicked","matchCopyMode":"RegexNtfMatchGroup","matchNftMode":"Regex","matchReplyMode":"FixedValue","matchTitleMode":"All","matchTitleValue":[""],"matchValue":["(?=码.*(\\d{4,6}))|(\\d{4,6})(?=.*码)"],"name":"复制短信验证码","needCopy":true,"needEmailForward":false,"needForward":false,"needMute":false,"needOpen":false,"needRemind":false,"needRemindForce":true,"needRemove":false,"needReplace":false,"needReply":false,"needTts":false,"needVibrate":false,"needVibrateForce":false,"phoneNumber":"7355608","pickedPKGs":["com.android.mms"],"replaceFormat":"{title}\n{content}","replaceTitle":"{app}","replySuffix":"","replyValue":"","scenesIds":[""],"soundUri":"","star":true,"timestamp":1649940535490,"ttsFormat":"收到{app}发来通知，标题{title}，内容{content}","ttsInDnd":false,"vibrateMode":0,"vibrateValue":"==___==_==_=="}
+```
+
+**垃圾短信拦截**
+```json
+{"actionList":["1","3"],"actionMode":"Remind","copyValue":"","emailTo":"","enable":true,"forwardSuffix":"","id":809,"matchAppMode":"AcceptPicked","matchCopyMode":"AllContent","matchNftMode":"ContainsAny","matchReplyMode":"FixedValue","matchTitleMode":"All","matchTitleValue":[""],"matchValue":["退订","回T","回N","T退","N退","TD退","积分提醒"],"name":"垃圾短信拦截","needCopy":false,"needEmailForward":false,"needForward":false,"needMute":true,"needOpen":false,"needRemind":false,"needRemindForce":false,"needRemove":true,"needReplace":false,"needReply":false,"needTts":false,"needVibrate":false,"needVibrateForce":false,"phoneNumber":"","pickedPKGs":["com.android.mms"],"replaceFormat":"{title}\n{content}","replaceTitle":"{app}","replySuffix":"","replyValue":"","scenesIds":[""],"star":true,"timestamp":1649942347311,"ttsFormat":"收到{app}发来通知，标题{title}，内容{content}","ttsInDnd":false,"vibrateMode":0,"vibrateValue":"==___==_==_=="}
+```
+
+**微信通知播报**
+```json
+{"actionList":["81"],"actionMode":"Remind","copyValue":"","emailTo":"","enable":true,"forwardSuffix":"","id":806,"matchAppMode":"AcceptPicked","matchCopyMode":"AllContent","matchNftMode":"All","matchReplyMode":"FixedValue","matchTitleMode":"All","matchTitleValue":[""],"matchValue":[""],"name":"微信通知播报","needCopy":false,"needEmailForward":false,"needForward":false,"needMute":false,"needOpen":false,"needRemind":false,"needRemindForce":false,"needRemove":false,"needReplace":false,"needReply":false,"needTts":true,"needVibrate":false,"needVibrateForce":false,"phoneNumber":"","pickedPKGs":["com.tencent.mm"],"replaceFormat":"{title}\n{content}","replaceTitle":"{app}","replySuffix":"","replyValue":"","scenesIds":[""],"star":true,"timestamp":1649940632021,"ttsFormat":"收到{app}发来通知，标题{title}，内容{content}","ttsInDnd":true,"vibrateMode":0,"vibrateValue":"==___==_==_=="}
+```
+
+**微信QQ红包**
+```json
+{"actionList":["2"],"actionMode":"Remind","copyValue":"","emailTo":"","enable":true,"forwardSuffix":"","id":805,"matchAppMode":"AcceptPicked","matchCopyMode":"AllContent","matchNftMode":"ContainsAny","matchReplyMode":"FixedValue","matchTitleMode":"All","matchTitleValue":[""],"matchValue":["[微信红包]","[QQ红包]"],"name":"微信QQ红包","needCopy":false,"needEmailForward":false,"needForward":false,"needMute":false,"needOpen":true,"needRemind":false,"needRemindForce":false,"needRemove":false,"needReplace":false,"needReply":false,"needTts":false,"needVibrate":false,"needVibrateForce":false,"phoneNumber":"","pickedPKGs":["com.tencent.mm","com.tencent.mobileqq"],"replaceFormat":"{title}\n{content}","replaceTitle":"{app}","replySuffix":"","replyValue":"","scenesIds":[""],"star":false,"timestamp":1649940477219,"ttsFormat":"收到{app}发来通知，标题{title}，内容{content}","ttsInDnd":false,"vibrateMode":0,"vibrateValue":"==___==_==_=="}
+```
+
+**短信验证码**
+```json
+{"actionList":[""],"actionMode":"Remind","copyValue":"","emailTo":"","enable":true,"forwardSuffix":"","id":802,"matchAppMode":"AcceptPicked","matchCopyMode":"AllContent","matchNftMode":"Regex","matchReplyMode":"FixedValue","matchTitleMode":"All","matchTitleValue":[""],"matchValue":["(?=码.*(\\d{4,6}))|(\\d{4,6})(?=.*码)"],"name":"短信验证码","needCopy":false,"needEmailForward":false,"needForward":false,"needMute":false,"needOpen":false,"needRemind":false,"needRemindForce":false,"needRemove":false,"needReplace":false,"needReply":false,"needTts":false,"needVibrate":false,"needVibrateForce":false,"phoneNumber":"","pickedPKGs":["com.android.mms"],"replaceFormat":"{title}\n{content}","replaceTitle":"{app}","replySuffix":"","replyValue":"","scenesIds":[""],"soundUri":"","star":false,"timestamp":1649940521120,"ttsFormat":"收到{app}发来通知，标题{title}，内容{content}","ttsInDnd":false,"vibrateMode":0,"vibrateValue":"==___==_==_=="}
+```
