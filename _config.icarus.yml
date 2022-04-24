@@ -243,7 +243,7 @@ widgets:
         # Author's current location
         location: Xi'an, Shaanxi
         # URL or path to the avatar image
-        avatar: https://avatars.githubusercontent.com/u/16552732
+        avatar: https://blog.skyrin.cn/img/avatar.png
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar
