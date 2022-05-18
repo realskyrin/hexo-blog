@@ -1,7 +1,9 @@
 ---
 title: RecyclerView 各种常用方法拓展
 date: 2022-04-24 21:18
-tags:  Android、View
+tags:  
+    - Android
+    - View
 ---
 一些常用的 RecyclerView 拓展方法整理
 <!--more-->
