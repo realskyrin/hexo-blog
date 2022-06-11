@@ -1,8 +1,13 @@
 ---
 title: Some useful command scripts
 date: 2022-06-11 11:19
+tags:  
+    - Tools
+    - Command
+    - Shell
 ---
-
+Record some common shortcut command tools.
+<!--more-->
 ## 1.cmd_utils.sh
 ``` shell
 #!/bin/bash
@@ -59,7 +64,7 @@ fun cmd(){
 	echo "# .tar 包压缩\ntar -cvf ntfh.tar ntfh/"
 }
 ```
-## 2. add cmd_utils.sh path to sys env path 👉 ~/.zprofile
+## 2. add cmd_utils.sh path to sys env path 👉 ~/.zprofile or ～/.bash_profile (legacy system)
 ``` shell
 vim ~/.zprofile
 # Add the following content
@@ -68,7 +73,8 @@ source /Users/username/sh/cmd_utils.sh
 
 ## 3. source file and restart terminal
 ``` shell
-# execute 👇 in terminal
+# execute 👇 in terminal to make it effective immediately 
 $ source ~/.zprofile 
 ```
+
 
