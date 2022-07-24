@@ -1,6 +1,9 @@
 ---
 title: Vim 保姆级入门教程
 date: 2022-07-21 12:06
+tags:  
+    - Tools
+    - Vim
 ---
 原视频地址: [https://www.bilibili.com/video/BV13t4y1t7Wg](https://www.bilibili.com/video/BV13t4y1t7Wg)
 <!--more-->
