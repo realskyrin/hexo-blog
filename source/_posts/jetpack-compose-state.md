@@ -16,7 +16,7 @@ tags:
 > 总结: **状态是小组件创建时可以同步读取的信息，在小组件的生命周期内可能会发生变化。**
 > 
 > 换句话说，小组件的状态是它的属性（参数）在创建时（小组件被画在屏幕上时）所维持的对象的数据。当它被使用时，状态也可以改变，例如，当一个 CheckBox 小组件被点击时，CheckBox 会根据其 **checked** 属性变更复选框的状态。
-- **Stateless**  一旦创建，其状态就无法更改的组件，因为它依赖于外界传入的参数来绘制界面，并且**无法在其内部自行变更状态**，最常见的如 Text、Image 等组件。
+- **Stateless 组件**  一旦创建，其状态就无法更改的组件，因为它依赖于外界传入的参数来绘制界面，并且**无法在其内部自行变更状态**，最常见的如 Text、Image 等组件。
 
 不包含任何逻辑计算的 Stateless 组件示例:
 ```kotlin
@@ -49,7 +49,7 @@ fun StatelessBottomTextIconButton(
 ```
 **StatelessBottomTextIconButton** 的 Icon 和 text 在创建时被传入后直接赋予组件且不可变更。
 
-- **Stateful** 有状态的组件，即创建后无需外界再次传入状态(参数)也**能在内部自行修改状态的组件**，例如 Checkbox、Radio。
+- **Statefu 组件l** 有状态的组件，即创建后无需外界再次传入状态(参数)也**能在内部自行修改状态的组件**，例如 Checkbox、Radio。
 接下来，我们尝试将 Stateless 示例中的 **StatelessBottomTextIconButton** 包装成 **Stateful** 组件来供不同的 UI 业务场景使用。
 
 ## 组件的状态提取
@@ -107,6 +107,7 @@ fun RuleLikeButton(
     val icon by derivedStateOf {
         if (likes) Icons.Filled.ThumbUpAlt else Icons.Filled.ThumbUpOffAlt
     }
+
     StatelessBottomTextIconButton(
         modifier = modifier,
         icon = icon,
@@ -118,6 +119,8 @@ fun RuleLikeButton(
     }
 }
 ```
+点赞按钮也很简单，只需要让 Compose 记住点赞状态（true/false）和点赞数量即可，text 可以通过点赞数量计算出来，icon 也可以通过点赞状态获取。然后我们只需在 StatelessBottomTextIconButton 的点击事件中更新点赞状态和点赞数量即可。
+
 状态的修改会触发 Compose 树进行重组，接着 StatelessBottomTextIconButton 就会被重新 new 出来并根据新的状态进行界面渲染。
 通过这样的包装，我们就做到了 Stateless 组件到 Stateful 组件的转变:
 
