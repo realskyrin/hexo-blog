@@ -160,22 +160,22 @@ search:
     type: insight
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-comment:
-    type: gitalk
-    client_id: 0587db6aa723e1ea1ab2
-    client_secret: a24565b4226d89d701c9f4635b7afc8d7b2cec03
-    repo: blog-comment
-    owner: realskyrin
-    admin:
-        - realskyrin
-    per_page: 20                    # 可选填
-    distraction_free_mode: false    # 可选填
-    pager_direction: last           # 可选填
-    create_issue_manually: false    # 可选填
-    proxy:                          # 可选填
-    flip_move_options:              # 可选填
-    enable_hotkey: true             # 可选填
-    language: zh-CN                 # 可选填
+# comment:
+#     type: gitalk
+#     client_id: 0587db6aa723e1ea1ab2
+#     client_secret: a24565b4226d89d701c9f4635b7afc8d7b2cec03
+#     repo: blog-comment
+#     owner: realskyrin
+#     admin:
+#         - realskyrin
+#     per_page: 20                    # 可选填
+#     distraction_free_mode: false    # 可选填
+#     pager_direction: last           # 可选填
+#     create_issue_manually: false    # 可选填
+#     proxy:                          # 可选填
+#     flip_move_options:              # 可选填
+#     enable_hotkey: true             # 可选填
+#     language: zh-CN                 # 可选填
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -355,7 +355,7 @@ plugins:
         tracking_id: 
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: true
+    busuanzi: false
     # CNZZ statistics
     # https://www.umeng.com/web
     cnzz:
